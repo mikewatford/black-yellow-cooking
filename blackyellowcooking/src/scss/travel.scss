@@ -1,0 +1,19 @@
+.travel-poster {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	resize: both;
+	overflow: auto;
+	background:
+    /* top, transparent black */
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    /* bottom, image */
+    ;
+	background-repeat: no-repeat;
+    background-size: cover;
+	background-position: center bottom;
+}
