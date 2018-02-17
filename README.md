@@ -1,5 +1,5 @@
-#Black and Yellow Cooking
+# Black and Yellow Cooking
 
-Template code for B&Y
+Template/theme code for B&Y Cooking
 
 http://www.blackandyellow.cooking
