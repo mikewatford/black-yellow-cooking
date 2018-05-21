@@ -1,23 +1,48 @@
-.post {
-
-	img {
-		padding-bottom: 20px;
-		margin-left: 0;
-		width: 140%;
-		margin-left: -20%;
-		max-width: 100%;
-		max-width: none !important;
-	}
-
-	a {
-		color: $blue;
-	}
-
+* {
+  box-sizing: border-box;
 }
 
-.copy-box {
-	margin: 30px 0;
-	padding: 0 20px;
+/* This technique doesn't naturally cause horizontal overflow, but once there is natural vertical overflow, it causes horizontal overflow, so stopping here. */
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0;
+}
+
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+p, figure {
+  margin: 15px 0;
+}
+figcaption {
+  text-align: center;
+  color: #999;
+}
+
+main a {
+	border-bottom: solid 2px hsl(0, 100%, 50%);
+	color: black;
+}
+
+main a:hover {
+	color: black;
 }
 
 .author-portrait {
@@ -39,9 +64,17 @@
 	padding-bottom: 15px;
 }
 
+small {
+	display: block;
+}
+
 .hover {
 	position: relative;
 	z-index: 3;
+}
+
+.disqus-position {
+	padding: 40px 0;
 }
 
 .next-previous {
@@ -63,4 +96,12 @@
 	opacity:0.3;
 	z-index: 2;
 	display: block;
+}
+
+.empty-post {
+	background-image:url(../images/empty.jpg);
+}
+
+.recipes-poster {
+	background-image: url(../images/recipes.jpg);
 }

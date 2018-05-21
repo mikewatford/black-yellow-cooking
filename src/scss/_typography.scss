@@ -2,9 +2,11 @@
 ===================== */
 
 @import 'https://fonts.googleapis.com/css?family=Hind|Raleway:300,300i,400,500i,700,900';
+@import 'https://fonts.googleapis.com/css?family=Permanent+Marker';
 
 $raleway: "Raleway", "Arial";
 $copy: "Hind", "Arial";
+$headline: "Permanent Marker, cursive";
 
 
 /* Typography: Nav  */
@@ -30,6 +32,20 @@ $copy: "Hind", "Arial";
 
 /*  Global  */
 
+.header-title {
+	font-family: $raleway;
+	font-weight: 900;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: $yellow;
+
+	@media only screen and (max-width: 40em) {
+			font-size: 32px;
+		}
+}
+
+
 .page-title {
 	font-family: $raleway;
 	font-weight: 900;
@@ -53,9 +69,14 @@ $copy: "Hind", "Arial";
 	font-size: 24px;
 	line-height: 24px;
 	text-transform: uppercase;
-	text-align: center;
+// 	text-align: center;
 	color: $white;
 	display: block;
+/*
+	background-color: hsl(0, 0%, 0%);
+    padding: 5px;
+    max-width: 110px;
+*/
 }
 
 
@@ -93,10 +114,25 @@ $copy: "Hind", "Arial";
 	}
 }
 
+.author-page-bio {
+	font-family: $copy;
+	font-weight: 400;
+	font-size: 18px;
+	color:$white;
+	text-align: center;
+}
+
+.bio-page {
+	text-align: center;
+	color:$white;
+}
+
+
 /* Article Post  */
 
 .thumb-title {
-	font-family: $raleway;
+// 	font-family: $raleway;
+	font-family: $headline;
 	font-weight: 900;
 	font-size: 48px;
 	text-transform: uppercase;
@@ -126,7 +162,7 @@ $copy: "Hind", "Arial";
 	p {
 		font-family: $copy;
 		font-weight: 400;
-		font-size: 21px;
+		font-size: 19px;
 		line-height: 1.8;
 		margin-bottom: 1.4em;
 		color:$off-black;
@@ -142,6 +178,7 @@ $copy: "Hind", "Arial";
 	line-height: 24px;
 	margin: 40px;
 	color: $white;
+	text-align: right;
 
 	@media only screen and (max-width: 40em) {
 			line-height: 32px;
@@ -152,13 +189,44 @@ $copy: "Hind", "Arial";
 		}
 }
 
-.next-post-title {
+.previous {
+	font-family: $raleway;
+	font-weight: 300;
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 36px;
+	line-height: 24px;
+	margin: 40px;
+	color: $white;
+	text-align: left;
+
+	@media only screen and (max-width: 40em) {
+			line-height: 32px;
+		}
+
+	@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			line-height: 52px;
+		}
+}
+
+.next-router-title {
 	font-family: $raleway;
 	font-weight: 900;
-	font-size: 48px;
+	font-size: 40px;
+	line-height: 24px;
+	margin-right: 40px;
+	color: $yellow;
+	text-align: right;
+}
+
+.previous-router-title {
+	font-family: $raleway;
+	font-weight: 900;
+	font-size: 40px;
 	line-height: 24px;
 	margin-left: 40px;
 	color: $yellow;
+	text-align: left;
 }
 
 /* Travel page  */
@@ -171,6 +239,10 @@ $copy: "Hind", "Arial";
 	text-transform: uppercase;
 	color: $white;
 	text-align: center;
+
+	@media only screen and (max-width: 40em) {
+			font-size: 20px;
+		}
 }
 
 .white-btn {
@@ -199,6 +271,15 @@ $copy: "Hind", "Arial";
 
 .travel-poster a:hover {
 	color: $white;
+}
+
+.travel-title {
+	font-family: $raleway;
+	font-weight: 900;
+	font-size: 32px;
+	text-transform: uppercase;
+// 	text-align: center;
+	color: $yellow;
 }
 
 
